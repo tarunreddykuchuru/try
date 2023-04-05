@@ -34,8 +34,8 @@ app.post("/chat", async (req, res) => {
 
 // Start the server ////////////////////
 
-const port = 5555;
-app.listen(port, () => {
+//const port = 5555;
+app.listen(process.env.PORT, () => {
   console.log(`Server listening on port ${port}`);
   console.log(`http://localhost:${port}`);
 });
